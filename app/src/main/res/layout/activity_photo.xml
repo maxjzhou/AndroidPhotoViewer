@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <ImageView
+      android:id="@+id/ImageDisplay"
+      android:layout_width="192dp"
+      android:layout_height="130dp"
+      android:layout_marginTop="4dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:srcCompat="@tools:sample/avatars" />
+
+  <Button
+      android:id="@+id/backPicture"
+      android:layout_width="60dp"
+      android:layout_height="50dp"
+      android:layout_marginTop="44dp"
+      android:text="&lt;"
+      app:layout_constraintEnd_toStartOf="@+id/ImageDisplay"
+      app:layout_constraintHorizontal_bias="0.52"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/nextPicture"
+      android:layout_width="60dp"
+      android:layout_height="50dp"
+      android:layout_marginTop="44dp"
+      android:text="&gt;"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.428"
+      app:layout_constraintStart_toEndOf="@+id/ImageDisplay"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <ListView
+      android:id="@+id/TagsList"
+      android:layout_width="392dp"
+      android:layout_height="130dp"
+      android:layout_marginTop="8dp"
+      android:background="#A0E9F3"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.529"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/ImageDisplay" />
+
+  <Button
+      android:id="@+id/DeleteTag"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="17dp"
+      android:text="Delete"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/TagsList" />
+
+  <EditText
+      android:id="@+id/Tag"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="48dp"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:hint="Name - Location"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.624"
+      app:layout_constraintStart_toEndOf="@+id/Persontext"
+      app:layout_constraintTop_toBottomOf="@+id/DeleteTag" />
+
+  <TextView
+      android:id="@+id/Persontext"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="48dp"
+      android:layout_marginTop="124dp"
+      android:text="Person - Location"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/TagsList" />
+
+  <Button
+      android:id="@+id/AddTagButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Add"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.495"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/Tag"
+      app:layout_constraintVertical_bias="0.249" />
+
+  <Button
+      android:id="@+id/backToAlbum"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginBottom="16dp"
+      android:text="Back"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

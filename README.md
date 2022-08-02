@@ -1,4 +1,4 @@
-Single-user photo application that allows storage and management of photos in one or more albums through the Android photo gallery.
+<h3>Single-user photo application that allows storage and management of photos in one or more albums through the Android photo gallery.</h3>
 
 Features & Functionalities:
 - Create, delete, and rename albums
